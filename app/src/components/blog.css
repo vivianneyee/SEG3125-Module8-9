@@ -1,0 +1,31 @@
+
+.article {
+  width: 28vw;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workouts h2 {
+  text-align: left;
+  margin-left: 16px;
+}
+
+.articles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.article {
+  text-align: left;
+}
+
+.article-link {
+  color: #49219F;
+}
+
+.article-link:hover {
+  color: #2d1561;
+}

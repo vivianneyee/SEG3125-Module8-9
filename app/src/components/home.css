@@ -4,20 +4,27 @@
   display:flex;
   width: 100%;
   margin-top:91px;
-}
-
-.homepage img {
-  width: 60%;
+  height:600px;
 }
 
 .gyminfo {
   float: left;
-  width: 40%;
+  width: 40vw;
   display: flex;
 }
 
 .gymInfoText {
   align-self: center;
+  margin-top: 120px;
+}
+
+.gymPhoto {
+  width: 60vw;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  object-fit: fill;
+  justify-content: flex-end;
 }
 
 .address {

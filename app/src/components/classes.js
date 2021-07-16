@@ -12,6 +12,7 @@ export default class Classes extends React.Component {
   render() {
     return(
       <div className="classes" id="classes">
+        <div className="nav-space"></div>
         <h1 className="pageTitle">Fitness Classes</h1>
         <div>
           <div className="row">
