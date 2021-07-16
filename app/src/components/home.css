@@ -49,10 +49,10 @@ h2 {
 
 .memberBtn {
   background-color: #49219F !important;
-  border: none;
+  border-color: #49219F;
   margin-top: 14px;
 }
 
 .memberBtn:hover {
-  background-color: #230f4d;
+  background-color: #341773 !important;
 }

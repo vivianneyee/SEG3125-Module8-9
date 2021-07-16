@@ -2,13 +2,56 @@
   margin-top: 40px;
   font-size: 48px;
   font-weight: bold;
+  margin-bottom: 40px;
 }
+
 .left-col {
-  width: 350px;
-  margin: 40px 0 40px 60px
+  width: 50vw;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+
+.right-col {
+  width: 50vw;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+
+.class-card {
+  width: 40vw;
 }
 
 .classImage {
-  height: 300px;
+  height: 450px;
   object-fit: cover;
+}
+
+.schedule img {
+  width: 25px;
+  height: 25px;
+  margin: 5px 5px 5px 0;
+  vertical-align: middle;
+}
+
+.schedule {
+  color: #49219F;
+  font-weight: bold;
+}
+
+.schedule:hover {
+  color: #2d1561;
+  cursor: pointer;
+}
+
+.registerBtn {
+  background-color: #49219F !important;
+  border-color: #49219F;
+}
+
+.registerBtn:hover {
+  background-color: #341773 !important;
 }
