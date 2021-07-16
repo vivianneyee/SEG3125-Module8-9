@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.row {
+  margin-bottom: 60px;
+}
+
 .left-col {
   width: 50vw;
   text-align: left;
@@ -40,6 +44,7 @@
 .schedule {
   color: #49219F;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .schedule:hover {
@@ -50,6 +55,10 @@
 .registerBtn {
   background-color: #49219F !important;
   border-color: #49219F;
+  color: white !important;
+  text-decoration: none;
+  padding: 5px 8px 5px 8px;
+  border-radius: 5px;
 }
 
 .registerBtn:hover {
