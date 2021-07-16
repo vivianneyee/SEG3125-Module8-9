@@ -6,6 +6,7 @@ import KBClass from './images/kickboxing_class.jpeg'
 import STClass from './images/strength_training.jpeg'
 import SpinClass from './images/spin_class.jpeg'
 import CalendarIcon from './images/calendar_icon.png'
+import Schedule from './schedule'
 
 export default class Classes extends React.Component {
   render() {
@@ -22,10 +23,7 @@ export default class Classes extends React.Component {
                   <Card.Text>
                     Make yoga and meditation part of your daily life.
                   </Card.Text>
-                  <div className="schedule">
-                    <img src={CalendarIcon}/>
-                    <span>See Schedule</span>
-                  </div>
+                  <Schedule name="yoga"/>
                   <a href="#becomeMember" className="registerBtn">Register</a>
                 </Card.Body>
               </Card>
@@ -39,10 +37,7 @@ export default class Classes extends React.Component {
                   <Card.Text>
                     Get a full body workout while learning real self-defense skills.
                   </Card.Text>
-                  <div className="schedule">
-                    <img src={CalendarIcon}/>
-                    <span>See Schedule</span>
-                  </div>
+                  <Schedule name="kickboxing"/>
                   <a href="#becomeMember" className="registerBtn">Register</a>
                 </Card.Body>
               </Card>
@@ -57,10 +52,7 @@ export default class Classes extends React.Component {
                   <Card.Text>
                     Build strength, get lean and toned, and develop coordination and balance
                   </Card.Text>
-                  <div className="schedule">
-                    <img src={CalendarIcon}/>
-                    <span>See Schedule</span>
-                  </div>
+                  <Schedule name="strength"/>
                   <a href="#becomeMember" className="registerBtn">Register</a>
                 </Card.Body>
               </Card>
@@ -74,10 +66,7 @@ export default class Classes extends React.Component {
                   <Card.Text>
                     Build power and endurance with this indoor cycling class designed for all fitness levels
                   </Card.Text>
-                  <div className="schedule">
-                    <img src={CalendarIcon}/>
-                    <span>See Schedule</span>
-                  </div>
+                  <Schedule name="spin"/>
                   <a href="#becomeMember" className="registerBtn">Register</a>
                 </Card.Body>
               </Card>

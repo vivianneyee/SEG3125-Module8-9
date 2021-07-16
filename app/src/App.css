@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.pageTitle {
+  margin-top: 40px;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

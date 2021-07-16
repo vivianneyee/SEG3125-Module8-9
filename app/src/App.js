@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 import NavBar from "./components/navbar"
 import Home from './components/home'
 import Classes from './components/classes'
+import Blog from './components/blog'
 //import logo from './images/logo.png';
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <NavBar/>
         <Home/>
         <Classes/>
+        <Blog/>
       </header>
     </div>
   );
