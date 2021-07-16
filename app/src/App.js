@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 import NavBar from "./components/navbar"
+import Home from './components/home'
+import Classes from './components/classes'
 //import logo from './images/logo.png';
 import './App.css';
 
@@ -9,17 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Home/>
+        <Classes/>
       </header>
     </div>
   );

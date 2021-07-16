@@ -1,0 +1,14 @@
+.pageTitle {
+  margin-top: 40px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.left-col {
+  width: 350px;
+  margin: 40px 0 40px 60px
+}
+
+.classImage {
+  height: 300px;
+  object-fit: cover;
+}

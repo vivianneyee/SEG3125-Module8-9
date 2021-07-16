@@ -1,10 +1,11 @@
 .my_navbar {
   background-color: #49219F;
   width:100%;
-  font-size: 18px;
+  font-size: 20px;
   position: fixed;
   top:0;
   color: white;
+  z-index: 2;
 }
 
 .nav-menu {
@@ -14,20 +15,26 @@
 .nav-logo {
   float: left;
   padding-left: 0;
-  margin-right: calc(100vw - 440px - 468px);
 }
 
 .navbar-container {
   margin: 0;
+  width:100%;
 }
 
-.nav-link-container {
+.navbar-toggler {
+  float:right;
+  margin-top: 18px;
+  margin-right:18px;
+}
+
+.nav-links {
   float:right;
 }
 
 .page-link {
   color: white !important;
-  background: none;
+  background: none !important;
   border: none;
   margin-right: 14px !important;
   margin-top: 18px !important;
@@ -35,7 +42,10 @@
 
 .page-link:hover {
   color: #aaa !important;
-  background-color: #49219F !important;
+}
+
+.page-link:active{
+  color: #aaa !important;
 }
 
 .nav-button {
@@ -43,6 +53,7 @@
   background-color: white;
   margin-right: 14px !important;
   margin-top: 18px !important;
+  border-radius: 3%;
 }
 
 .nav-button:hover {

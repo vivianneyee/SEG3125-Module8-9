@@ -1,0 +1,58 @@
+.home {
+  background-color: white;
+  color: black;
+  display:flex;
+  width: 100%;
+  margin-top:91px;
+}
+
+.homepage img {
+  width: 60%;
+}
+
+.gyminfo {
+  float: left;
+  width: 40%;
+  display: flex;
+}
+
+.gymInfoText {
+  align-self: center;
+}
+
+.address {
+   display: flex;
+   margin-top: 14px;
+   justify-content: center;
+}
+
+.address img {
+  width: 36px;
+  height: 36px;
+}
+
+.address p {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 40px;
+  color: #49219F;
+  padding-top: 200px;
+  padding: 20px 20px 0 20px;
+}
+
+.gymPhoto img{
+  width: 60vw;
+  object-fit: cover;
+}
+
+.memberBtn {
+  background-color: #49219F !important;
+  border: none;
+  margin-top: 14px;
+}
+
+.memberBtn:hover {
+  background-color: #230f4d;
+}
