@@ -13,6 +13,24 @@
   height: 91px;
 }
 
+.contactUs {
+  color: white !important;
+  background: none !important;
+  border: none;
+  margin-right: 14px !important;
+  margin-top: 18px !important;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  align-self: stretch;
+  height:34px;
+  padding:8px;
+}
+
+.contactUs:hover {
+  color: #aaa !important;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

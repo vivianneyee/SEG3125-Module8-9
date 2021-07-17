@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './images/logo.png'
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import './navbar.css'
+import ContactUs from './contact'
 
 export default class NavBar extends React.Component {
   render() {
@@ -19,7 +20,7 @@ export default class NavBar extends React.Component {
                   <a className="page-link" href="#classes">Classes</a>
                   <Nav.Link className="page-link" href="#blog">Blog</Nav.Link>
                   <Nav.Link href="#becomeMember" className="nav-button">Become a Member</Nav.Link>
-                  <Nav.Link className="page-link" href="#contactUs">Contact Us</Nav.Link>
+                  <ContactUs/>
                 </Nav>
               </Navbar.Collapse>
             </div>
