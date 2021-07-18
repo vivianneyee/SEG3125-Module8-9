@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import {Modal, Button, Table, CloseButton} from 'react-bootstrap'
-import CalendarIcon from './images/calendar_icon.png'
+import {React, useState} from 'react'
+import {Modal, Button, Form} from 'react-bootstrap'
+import ConfirmMessage from './confirmMessage'
 
-function Schedule(props) {
+function Register(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -73,58 +73,47 @@ function Schedule(props) {
   }
 
   return (
-    <>
-      <div className="schedule" onClick={handleShow}>
-        <img src={CalendarIcon}/>
-        <span>See Schedule</span>
-      </div>
-
+    <div>
+      <Button className="registerBtn" onClick={handleShow}>Register</Button>
       <Modal
-        size="lg"
         show={show}
         onHide={handleClose}
-        keyboard={false}
+        size="md"
       >
-        <Modal.Header>
-          <Modal.Title>Schedule</Modal.Title>
+        <Modal.Header closeButton>
+          <Modal.Title>Register</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div>
-            <Table bordered>
-              <thead>
-                <tr>
-                  <th>Sunday</th>
-                  <th>Monday</th>
-                  <th>Tuesday</th>
-                  <th>Wednesday</th>
-                  <th>Thursday</th>
-                  <th>Friday</th>
-                  <th>Saturday</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{sunday}</td>
-                  <td>{monday}</td>
-                  <td>{tuesday}</td>
-                  <td>{wednesday}</td>
-                  <td>{thursday}</td>
-                  <td>{friday}</td>
-                  <td>{saturday}</td>
-                </tr>
-              </tbody>
-            </Table>
+          <div className="registerForm">
+            <Form>
+              <label for="classSelect" className="selectLabel">Select a Time</label>
+              <select className="mb-3" id="classSelect">
+                <option>Monday: {monday}</option>
+                <option>Tuesday: {tuesday}</option>
+                <option>Wednesday: {wednesday}</option>
+                <option>Thursday: {thursday}</option>
+                <option>Friday: {friday}</option>
+                <option>Saturday: {saturday}</option>
+                <option>Sunday: {sunday}</option>
+              </select>
+              <Form.Group className="mb-3">
+                <Form.Label>Member ID</Form.Label>
+                <Form.Control type="text" />
+              </Form.Group>
+            </Form>
           </div>
-
+          <div>
+            <ConfirmMessage
+              msgTitle="Registration Successful"
+              msg="A confirmation email was sent to you. To cancel, press the cancellation link in the email."
+              btn="Register"
+            >
+            </ConfirmMessage>
+          </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 
-export default Schedule
+export default Register

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Modal, Button, Form, CloseButton} from 'react-bootstrap'
+import ConfirmMessage from './confirmMessage'
 
 function ContactUs() {
   const [show, setShow] = useState(false);
@@ -39,9 +40,12 @@ function ContactUs() {
               </Form.Group>
             </Form>
             <div>
-              <Button className="confirmBtn" onClick={handleClose}>
-                Send Message
-              </Button>
+              <ConfirmMessage
+                msgTitle="Message Sent"
+                msg="You will hear back from one of our staff shortly"
+                btn="Send Message"
+              >
+              </ConfirmMessage>
             </div>
           </div>
         </Modal.Body>

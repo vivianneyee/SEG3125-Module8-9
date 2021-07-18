@@ -31,6 +31,48 @@
   color: #aaa !important;
 }
 
+.confirmBtn {
+  background-color: #49219F !important;
+  border-color: #49219F;
+  margin-top:12px;
+  margin-right:12px;
+  width: 160px;
+  height:38px;
+}
+
+.confirmBtn:hover {
+  background-color: #341773 !important;
+}
+
+.confirm {
+  display:flex;
+  margin-bottom: 40px;
+}
+
+.confirmToast {
+  width: calc(100% - 172px);
+}
+
+.selectLabel {
+  margin-bottom:8px;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+#classSelect {
+  display:block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

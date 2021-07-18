@@ -1,6 +1,7 @@
 import React from 'react'
 import {Form, Button} from 'react-bootstrap'
 import './membership.css'
+import ConfirmMessage from './confirmMessage'
 
 
 export default class Membership extends React.Component {
@@ -88,9 +89,11 @@ export default class Membership extends React.Component {
                 </div>
               </Form>
               <div>
-                <Button className="confirmBtn">
-                  Confirm Payment
-                </Button>
+                <ConfirmMessage
+                  msgTitle="Payment Successful"
+                  msg="You will recieve an email with your membership info"
+                  btn="Confirm Payment"
+                />
               </div>
             </div>
           </div>

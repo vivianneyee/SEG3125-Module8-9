@@ -15,7 +15,7 @@ export default class Home extends React.Component {
               <img src={LocationIcon}/>
               <p>34 Murray St. Ottawa ON</p>
             </span>
-            <Button className="memberBtn">Become a Member</Button>
+            <Button className="memberBtn" href="#becomeMember">Become a Member</Button>
           </div>
         </div>
         <div className="gymPhoto">

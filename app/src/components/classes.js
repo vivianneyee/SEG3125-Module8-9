@@ -7,6 +7,7 @@ import STClass from './images/strength_training.jpeg'
 import SpinClass from './images/spin_class.jpeg'
 import CalendarIcon from './images/calendar_icon.png'
 import Schedule from './schedule'
+import Register from './register'
 
 export default class Classes extends React.Component {
   render() {
@@ -63,12 +64,12 @@ export default class Classes extends React.Component {
               <Card className="class-card">
                 <Card.Img variant="top" src={SpinClass} className="classImage"/>
                 <Card.Body>
-                  <Card.Title>Kickboxing</Card.Title>
+                  <Card.Title>Spin</Card.Title>
                   <Card.Text>
                     Build power and endurance with this indoor cycling class designed for all fitness levels
                   </Card.Text>
                   <Schedule name="spin"/>
-                  <a href="#becomeMember" className="registerBtn">Register</a>
+                  <Register name="spin"/>
                 </Card.Body>
               </Card>
             </div>

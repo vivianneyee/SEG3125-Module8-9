@@ -42,13 +42,3 @@ h3 {
   margin-bottom: 22px;
   text-align: left;
 }
-
-.confirmBtn {
-  background-color: #49219F !important;
-  border-color: #49219F;
-  margin-top:30px;
-}
-
-.confirmBtn:hover {
-  background-color: #341773 !important;
-}

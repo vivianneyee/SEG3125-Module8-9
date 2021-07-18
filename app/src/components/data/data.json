@@ -1,0 +1,42 @@
+export const classSchedules = [
+  {
+    name: "yoga",
+    monday: "06:00 - 07:00 Instructor: Jenny",
+    tuesday: "10:00 - 11:00 Instructor: Jenny",
+    wednesday: "08:00 - 09:00 Instructor: Andrea",
+    thursday: "",
+    friday: "18:00 - 19:00 Instructor: Jenny",
+    saturday: "12:00 - 13:00 Instructor: Andrea",
+    sunday: "08:00 - 09:00 Instructor: Andrea"
+  },
+  {
+    name: "kickboxing",
+    monday: "",
+    tuesday: "18:00 - 19:00 Instructor: Marcus",
+    wednesday: "",
+    thursday: "18:00 - 19:00 Instructor: Marcus",
+    friday: "18:00 - 19:00 Instructor: Liam",
+    saturday: "14:00 - 15:00 Instructor: Liam",
+    sunday: ""
+  },
+  {
+    name: "strength",
+    monday: "13:00 - 14:00 Instructor: James",
+    tuesday: "",
+    wednesday: "13:00 - 14:00 Instructor: James",
+    thursday: "",
+    friday: "17:00 - 18:00 Instructor: Liam",
+    saturday: "09:00 - 10:00 Instructor: Liam",
+    sunday: ""
+  },
+  {
+    name: "spin",
+    monday: "",
+    tuesday: "",
+    wednesday: "",
+    thursday: "",
+    friday: "07:00 - 08:00 Instructor: Maria",
+    saturday: "09:00 - 10:00 Instructor: Maria",
+    sunday: ""
+  }
+];
