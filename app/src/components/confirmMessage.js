@@ -9,7 +9,7 @@ function ConfirmMessage(props) {
 
   return (
     <div className="confirm">
-      <Button className="confirmBtn" onClick={() => setShow(true)}>{btn}</Button>
+      <Button type="submit" className="confirmBtn" onClick={() => setShow(true)}>{btn}</Button>
       <Toast className="confirmToast" onClose={() => setShow(false)} show={show} delay={3000} autohide>
         <Toast.Header closeButton={false}>
           <strong className="me-auto">{msgTitle}</strong>
@@ -18,6 +18,7 @@ function ConfirmMessage(props) {
       </Toast>
     </div>
   );
+
 }
 
 export default ConfirmMessage

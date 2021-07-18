@@ -26,7 +26,7 @@ export default class Classes extends React.Component {
                     Make yoga and meditation part of your daily life.
                   </Card.Text>
                   <Schedule name="yoga"/>
-                  <a href="#becomeMember" className="registerBtn">Register</a>
+                  <Register name="yoga"/>
                 </Card.Body>
               </Card>
             </div>
@@ -40,7 +40,7 @@ export default class Classes extends React.Component {
                     Get a full body workout while learning real self-defense skills.
                   </Card.Text>
                   <Schedule name="kickboxing"/>
-                  <a href="#becomeMember" className="registerBtn">Register</a>
+                  <Register name="kickboxing"/>
                 </Card.Body>
               </Card>
             </div>
@@ -55,7 +55,7 @@ export default class Classes extends React.Component {
                     Build strength, get lean and toned, and develop coordination and balance
                   </Card.Text>
                   <Schedule name="strength"/>
-                  <a href="#becomeMember" className="registerBtn">Register</a>
+                  <Register name="strength"/>
                 </Card.Body>
               </Card>
             </div>
