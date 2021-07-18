@@ -1,12 +1,35 @@
 import {React, useState} from 'react'
 import {Modal, Button, Form} from 'react-bootstrap'
-import ConfirmMessage from './confirmMessage'
+import {toast} from 'react-toastify'
 
 function Register(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [validated, setValidated] = useState(false);
+  var isValid = false;
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      console.log("invalid")
+    } else {
+      isValid = true;
+      notify();
+      handleClose();
+      console.log("valid")
+    }
+      setValidated(true);
+  };
+
+  const notify = () => {
+    if (isValid) {
+      toast("Registration successful!")
+    }
+  }
 
   const classType = props.name;
 
@@ -85,7 +108,7 @@ function Register(props) {
         </Modal.Header>
         <Modal.Body>
           <div className="registerForm">
-            <Form>
+            <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <label for="classSelect" className="selectLabel">Select a Time</label>
               <select className="mb-3" id="classSelect">
                 <option>Monday: {monday}</option>
@@ -98,17 +121,10 @@ function Register(props) {
               </select>
               <Form.Group className="mb-3">
                 <Form.Label>Member ID</Form.Label>
-                <Form.Control type="text" />
+                <Form.Control required type="text" />
               </Form.Group>
+              <Button className="confirmBtn" type="submit">Send Message</Button>
             </Form>
-          </div>
-          <div>
-            <ConfirmMessage
-              msgTitle="Registration Successful"
-              msg="A confirmation email was sent to you. To cancel, press the cancellation link in the email."
-              btn="Register"
-            >
-            </ConfirmMessage>
           </div>
         </Modal.Body>
       </Modal>

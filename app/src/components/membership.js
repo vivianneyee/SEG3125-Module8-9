@@ -1,12 +1,10 @@
 import {React, useState} from 'react'
-import {Form, Button, Toast} from 'react-bootstrap'
+import {Form, Button, Toast, OverlayTrigger, Tooltip} from 'react-bootstrap'
 import './membership.css'
-import ConfirmMessage from './confirmMessage'
 import TooltipIcon from './images/tooltip-icon.png'
 import {toast} from 'react-toastify'
 
 function Membership() {
-  const [show, setShow] = useState(false);
   const [validated, setValidated] = useState(false);
   var isValid = false;
   const handleSubmit = (event) => {
@@ -89,7 +87,19 @@ function Membership() {
                 <p className="total">Total: $90.40</p>
               </div>
               <Form.Group className="mb-3">
-                <Form.Label>Card Number</Form.Label>
+                <Form.Label>
+                  Card Number
+                  <OverlayTrigger
+                    placement="right"
+                    overlay={
+                      <Tooltip id={`tooltip-right`}>
+                        your card will be charged $60 monthly
+                      </Tooltip>
+                    }
+                  >
+                    <img className="tooltipIcon" src={TooltipIcon}/>
+                  </OverlayTrigger>
+                </Form.Label>
                 <Form.Control required inputmode="numeric" pattern="[0-9\s]{13,19}" type="text" placeholder="xxxx xxxx xxxx xxxx"/>
               </Form.Group>
               <Form.Group className="mb-3">
@@ -102,7 +112,19 @@ function Membership() {
                   <Form.Control required type="text"/>
                 </Form.Group>
                 <Form.Group className="mb-3 col2">
-                  <Form.Label>CVV</Form.Label>
+                  <Form.Label>
+                    CVV
+                    <OverlayTrigger
+                      placement="right"
+                      overlay={
+                        <Tooltip id={`tooltip-right`}>
+                          the 3 numbers on the back of your card
+                        </Tooltip>
+                      }
+                    >
+                      <img className="tooltipIcon" src={TooltipIcon}/>
+                    </OverlayTrigger>
+                  </Form.Label>
                   <Form.Control required type="number" maxlength="3" minlength="3"/>
                 </Form.Group>
               </div>

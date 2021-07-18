@@ -45,3 +45,8 @@ h3 {
   margin-bottom: 22px;
   text-align: left;
 }
+
+.tooltipIcon {
+  width: 30px;
+  vertical-align: top;
+}
