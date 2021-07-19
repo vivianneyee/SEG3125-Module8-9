@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import {Modal, Button, Form, CloseButton} from 'react-bootstrap'
 import {toast} from 'react-toastify'
 
-function ContactUs() {
+function ContactUs(props) {
+  const btnName = props.name
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -34,7 +35,7 @@ function ContactUs() {
   return (
     <>
       <a className="contactUs" onClick={handleShow}>
-        Contact Us
+        {btnName}
       </a>
 
       <Modal

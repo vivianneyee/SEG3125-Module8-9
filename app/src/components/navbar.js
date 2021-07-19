@@ -3,8 +3,14 @@ import Logo from './images/logo.png'
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap'
 import './navbar.css'
 import ContactUs from './contact'
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next";
 
 function NavBar() {
+  const {t,i18n} = useTranslation();
+  const changeLang = (lng) => {
+    i18n.changeLanguage(lng)
+  }
   return (
     <div class="nav-menu">
       <Navbar expand="lg" className="my_navbar">
@@ -16,11 +22,14 @@ function NavBar() {
           <div className="nav-links">
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
-                <a className="page-link" href="#classes">Classes</a>
-                <Nav.Link className="page-link" href="#blog">Blog</Nav.Link>
-                <Nav.Link href="#becomeMember" className="nav-button">Become a Member</Nav.Link>
-                <ContactUs/>
-
+                <a className="page-link" href="#classes">{t("nav-classes")}</a>
+                <Nav.Link className="page-link" href="#blog">{t("nav-blog")}</Nav.Link>
+                <Nav.Link href="#becomeMember" className="nav-button">{t("become-member")}</Nav.Link>
+                <ContactUs name={t("nav-contact")}/>
+                <NavDropdown className="languageDropdown" title={t("nav-lang")}>
+                  <NavDropdown.Item onSelect={() => i18n.changeLanguage('en')}>English</NavDropdown.Item>
+                  <NavDropdown.Item onSelect={() => i18n.changeLanguage('fr')}>Français</NavDropdown.Item>
+                </NavDropdown>
               </Nav>
             </Navbar.Collapse>
           </div>
@@ -29,8 +38,4 @@ function NavBar() {
     </div>
   );
 }
-// <NavDropdown title="language">
-//   <NavDropdown.Item onClick={setEnglish}>English<NavDropdown.Item>
-//   <NavDropdown.Item onClick={setFrench}>Francais<NavDropdown.Item>
-// </NavDropdown>
 export default NavBar

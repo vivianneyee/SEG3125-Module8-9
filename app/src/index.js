@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {IntlProvider} from 'react-intl'
+import './i18n'
 
 ReactDOM.render(
   <React.StrictMode>
-    <IntlProvider>
       <App />
-    </IntlProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

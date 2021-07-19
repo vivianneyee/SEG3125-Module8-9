@@ -123,7 +123,7 @@ function Register(props) {
                 <Form.Label>Member ID</Form.Label>
                 <Form.Control required type="text" />
               </Form.Group>
-              <Button className="confirmBtn" type="submit">Send Message</Button>
+              <Button className="confirmBtn" type="submit">Register</Button>
             </Form>
           </div>
         </Modal.Body>

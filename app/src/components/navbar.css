@@ -59,3 +59,12 @@
 .nav-button:hover {
   background-color: #aaa;
 }
+
+.nav-item.languageDropdown {
+  color: white !important;
+  margin-top:18px;
+}
+
+.dropdown-toggle {
+  color: white !important;
+}
